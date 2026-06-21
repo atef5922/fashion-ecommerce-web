@@ -1,0 +1,157 @@
+import type { Product } from "@/types/product";
+import { fashionImages } from "./images";
+
+export const products: Product[] = [
+  {
+    id: "p-001",
+    slug: "monroe-satin-slip-dress",
+    name: "Monroe Satin Slip Dress",
+    brand: "Mugnee Atelier",
+    category: "Women",
+    collection: "Evening Edit",
+    price: 2990,
+    compareAtPrice: 4500,
+    colors: ["Champagne", "Black", "Burgundy"],
+    colorVariants: {
+      Champagne: { images: [fashionImages.products.satinDress[0], fashionImages.products.satinDress[1]], inStock: true, stockCount: 18 },
+      Black: { images: [fashionImages.products.satinDress[1], fashionImages.campaigns.sale], inStock: true, stockCount: 4 },
+      Burgundy: { images: [fashionImages.campaigns.look, fashionImages.products.satinDress[0]], inStock: false, stockCount: 0 }
+    },
+    sizes: ["XS", "S", "M", "L", "XL"],
+    images: [...fashionImages.products.satinDress],
+    hoverImage: fashionImages.products.satinDress[1],
+    description: "A fluid satin dress cut on the bias with a soft cowl neckline and barely-there straps.",
+    details: ["Bias-cut satin", "Fully lined", "Hidden side zip", "Dry clean recommended"],
+    rating: 4.8,
+    reviewCount: 84,
+    isNew: true,
+    isFeatured: true,
+    isSale: true
+  },
+  {
+    id: "p-002",
+    slug: "studio-wool-blazer",
+    name: "Studio Wool Blazer",
+    brand: "Mugnee Studio",
+    category: "Women",
+    collection: "Workwear",
+    price: 6500,
+    colors: ["Cloud", "Charcoal", "Olive"],
+    colorVariants: {
+      Cloud: { images: [fashionImages.products.woolBlazer[0], fashionImages.products.woolBlazer[1]], inStock: true, stockCount: 12 },
+      Charcoal: { images: [fashionImages.products.woolBlazer[1], fashionImages.journal.tailoring], inStock: true, stockCount: 3 },
+      Olive: { images: [fashionImages.campaigns.tailoring, fashionImages.products.woolBlazer[0]], inStock: false, stockCount: 0 }
+    },
+    sizes: ["XS", "S", "M", "L"],
+    images: [...fashionImages.products.woolBlazer],
+    hoverImage: fashionImages.products.woolBlazer[1],
+    description: "A precise wool blazer with a lightly structured shoulder and elongated single-breasted line.",
+    details: ["Italian wool blend", "Horn-effect buttons", "Internal pocket", "Tailored fit"],
+    rating: 4.9,
+    reviewCount: 126,
+    isNew: true,
+    isFeatured: true,
+    isSale: false
+  },
+  {
+    id: "p-003",
+    slug: "linen-resort-shirt",
+    name: "Linen Resort Shirt",
+    brand: "Mugnee Atelier",
+    category: "Men",
+    collection: "Linen Stories",
+    price: 2490,
+    colors: ["Ivory", "Sage", "Ink"],
+    colorVariants: {
+      Ivory: { images: [fashionImages.products.linenShirt[0], fashionImages.products.linenShirt[1]], inStock: true, stockCount: 21 },
+      Sage: { images: [fashionImages.products.linenShirt[1], fashionImages.collections.linen], inStock: true, stockCount: 5 },
+      Ink: { images: [fashionImages.products.linenShirt[0], fashionImages.categories.men], inStock: false, stockCount: 0 }
+    },
+    sizes: ["S", "M", "L", "XL"],
+    images: [...fashionImages.products.linenShirt],
+    hoverImage: fashionImages.products.linenShirt[1],
+    description: "A breathable linen shirt with an open collar, relaxed drape, and vacation-ready polish.",
+    details: ["100% linen", "Mother-of-pearl buttons", "Relaxed fit", "Machine washable"],
+    rating: 4.7,
+    reviewCount: 68,
+    isNew: false,
+    isFeatured: true,
+    isSale: false
+  },
+  {
+    id: "p-004",
+    slug: "tailored-pleat-trouser",
+    name: "Tailored Pleat Trouser",
+    brand: "Mugnee Studio",
+    category: "Men",
+    collection: "Modern Tailoring",
+    price: 3990,
+    compareAtPrice: 5200,
+    colors: ["Stone", "Black", "Navy"],
+    colorVariants: {
+      Stone: { images: [fashionImages.products.pleatTrouser[0], fashionImages.products.pleatTrouser[1]], inStock: true, stockCount: 14 },
+      Black: { images: [fashionImages.products.pleatTrouser[1], fashionImages.campaigns.tailoring], inStock: true, stockCount: 2 },
+      Navy: { images: [fashionImages.categories.men, fashionImages.products.pleatTrouser[0]], inStock: false, stockCount: 0 }
+    },
+    sizes: ["30", "32", "34", "36", "38"],
+    images: [...fashionImages.products.pleatTrouser],
+    hoverImage: fashionImages.products.pleatTrouser[1],
+    description: "A double-pleat trouser with a relaxed leg, refined waistband, and crisp daily versatility.",
+    details: ["Wool blend", "Double pleat", "Hook-and-bar closure", "Straight leg"],
+    rating: 4.6,
+    reviewCount: 42,
+    isNew: false,
+    isFeatured: false,
+    isSale: true
+  },
+  {
+    id: "p-005",
+    slug: "cashmere-soft-cardigan",
+    name: "Cashmere Soft Cardigan",
+    brand: "Mugnee Atelier",
+    category: "Women",
+    collection: "Quiet Luxury",
+    price: 5900,
+    colors: ["Oat", "Heather", "Espresso"],
+    colorVariants: {
+      Oat: { images: [fashionImages.products.cardigan[0], fashionImages.products.cardigan[1]], inStock: true, stockCount: 10 },
+      Heather: { images: [fashionImages.products.cardigan[1], fashionImages.categories.women], inStock: true, stockCount: 4 },
+      Espresso: { images: [fashionImages.journal.capsule, fashionImages.products.cardigan[0]], inStock: false, stockCount: 0 }
+    },
+    sizes: ["XS", "S", "M", "L", "XL"],
+    images: [...fashionImages.products.cardigan],
+    hoverImage: fashionImages.products.cardigan[1],
+    description: "A feather-soft cardigan in a refined cashmere blend with rib trims and a clean neckline.",
+    details: ["Cashmere blend", "Ribbed cuff", "Button front", "Soft-touch knit"],
+    rating: 4.9,
+    reviewCount: 97,
+    isNew: true,
+    isFeatured: true,
+    isSale: false
+  },
+  {
+    id: "p-006",
+    slug: "mini-leather-shoulder-bag",
+    name: "Mini Leather Shoulder Bag",
+    brand: "Mugnee Goods",
+    category: "Accessories",
+    collection: "Accessories",
+    price: 3290,
+    colors: ["Black", "Tan", "Olive"],
+    colorVariants: {
+      Black: { images: [fashionImages.products.shoulderBag[0], fashionImages.products.shoulderBag[1]], inStock: true, stockCount: 16 },
+      Tan: { images: [fashionImages.products.shoulderBag[1], fashionImages.collections.accessories], inStock: true, stockCount: 3 },
+      Olive: { images: [fashionImages.categories.accessories, fashionImages.products.shoulderBag[0]], inStock: false, stockCount: 0 }
+    },
+    sizes: ["One Size"],
+    images: [...fashionImages.products.shoulderBag],
+    hoverImage: fashionImages.products.shoulderBag[1],
+    description: "A compact shoulder bag in supple leather with enough structure for every-day elegance.",
+    details: ["Full-grain leather", "Magnetic closure", "Cotton lining", "Adjustable strap"],
+    rating: 4.8,
+    reviewCount: 59,
+    isNew: false,
+    isFeatured: true,
+    isSale: false
+  }
+];
